@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="dist/style.css">
+    <!-- <link href="popup/styles.css" rel="stylesheet" type="text/css" /> -->
+    <title>[Tomasz] [Jarosz] - Recruitment task</title>
+</head>
+<body>
+    <div class="conteiner">
+
+        <div class="leftside">
+            <img src="images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg" class="img-hero">
+        </div>
+        <div class="rightside">
+            <div class="content">
+                <div class="tittle">
+                Lorem Ipsum
+                </div>
+                <div class="copy">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad qui tenetur aperiam temporibus cupiditate magni fugiat excepturi blanditiis! Esse adipisci commodi vel fugiat ipsam. Perferendis impedit iste nulla aperiam.
+                </div>
+            
+                <button type="submit" class="btn" onclick="openPopup()" onclick="openAlert()">Button</button>
+               
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup"></div>
+        
+        <div class="alert" id="alertt">
+            <button type="button" onclick="closePopup()" onclick="closeAlert()">X</button>
+            <h3>
+                alert
+            </h3>
+            <p>
+                You have clicked X times to relaed button.
+            </p>
+
+        </div>
+<!-- <script type="text/javascript" src="all.js"></script> -->
+
+
+<script>
+let popup = document.getElementById("popup");
+function openPopup () {
+    popup.classList.add("open-popup");
+}
+
+function closePopup () {
+    popup.classList.remove("open-popup");
+}
+
+
+
+let alertt = document.getElementById("alert");
+function openAlert () {
+    alertt.classList.add("open-alert");
+}
+
+function closeAlert () {
+    alertt.classList.remove("open-alert");
+}
+</script>
+</body>
